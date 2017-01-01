@@ -17,5 +17,5 @@ $(document).ready(function(){
 	
 	$('.js-form').toggleClass('is-visible');
 	
-	});
+	})
 })
