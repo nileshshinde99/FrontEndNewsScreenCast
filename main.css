@@ -1,0 +1,140 @@
+/**********************
+*Front-end News ! stylesheet
+*Indigo     : #3f51b5;
+*LIght blue : #c5cae9
+*white      :#fff
+*pink      :#ff4081
+*Gray (dark)     :#212121
+*Gray (light)      :#b6b6b6
+/*********************/
+
+/**Base****/
+
+body{
+	font-size: 16px;
+	line-height: 1.5;
+	color: #212121;
+}
+
+h1, h2, h3, h4, h5,h6 {
+	
+	
+}
+
+ol, ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+p{
+	
+}
+
+a{
+	color: #ff4081;
+}
+a:active,
+a:hover,
+a:focus{
+	color: #212121;
+}
+
+/**Head***/
+.hero {
+	background-color: #3f51b5;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.logo{
+	font-size: 34px;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+.news-item{
+	border-bottom: 1px solid #b6b6b5;;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.news-meta-item{
+	display: inline;
+	margin-right: 15px;
+}
+
+.news-link{
+	color: #3f51b5;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.is-liked{
+	animation: flash 2s;
+}
+
+.is-visible{
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+}
+
+/***********************
+/*Form
+***********************/
+
+.form{
+	height: 0;
+	margin-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+	
+}
+
+.form.is-visible {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.form-label{
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.form-input{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	border: 1px solid #b6b6b6;
+	border-radius: 4px;
+	
+}
+
+
+
+/***********************
+/*Animation
+***********************/
+
+@keyframes flash{
+	from, 50%, to {
+		opacity: 0;
+	}
+	25%, 75% {
+		opacity: 1;
+	}
+}
